@@ -6,7 +6,8 @@ This project provides a small FastAPI backend and a React frontend for exploring
 
 ### Backend
 
-1. Install dependencies:
+1. Install dependencies (requires internet access to download packages such as
+   `pandas` and `simple_salesforce`):
    ```bash
    pip install -r api/requirements.txt
    ```
@@ -38,6 +39,19 @@ To build the frontend for production:
 ```bash
 npm run build
 ```
+
+### Environment Variables
+
+Create a `.env` file in the project root to store any required environment
+variables. For example, Salesforce credentials might be configured as:
+
+```dotenv
+SALESFORCE_USERNAME=your_username
+SALESFORCE_PASSWORD=your_password
+SALESFORCE_TOKEN=your_security_token
+```
+
+The backend will read these variables when connecting to external services.
 
 ### Notes
 
