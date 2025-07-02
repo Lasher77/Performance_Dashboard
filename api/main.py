@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from .analysis import get_membership_metrics
+from src.analysis import get_membership_metrics
 
 app = FastAPI()
 
