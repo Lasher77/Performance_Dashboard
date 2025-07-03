@@ -16,7 +16,7 @@ This project provides a small FastAPI backend and a React frontend for exploring
    uvicorn api.app:app --reload
    ```
 
-The API will run on `http://localhost:8000` by default and exposes `/metrics`.
+The API will run on `http://localhost:8000` by default and exposes `/api/metrics`.
 
 ### Frontend
 
