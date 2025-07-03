@@ -3,6 +3,6 @@ from src.analysis import get_membership_metrics
 
 app = FastAPI()
 
-@app.get('/metrics')
+@app.get('/api/metrics')
 def read_metrics():
     return get_membership_metrics()
